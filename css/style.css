@@ -1,7 +1,79 @@
+body {
+  background-color: #ff9874;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clock-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: #ffd7c4;
+  padding: 30px;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
 h1 {
   text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 50px;
+  padding: 10px;
+  margin-top: 0;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 20px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed darksalmon;
+  padding: 20px 10px;
+}
+
+.city:last-child {
+  border: none;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+.date {
+  opacity: 1.5;
+  font-family: fantasy;
+  padding-bottom: 10px;
+}
+.time {
+  font-family: fantasy;
+  font-size: 50px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+
+.time small {
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 36px;
 }
 
 footer {
   text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: black;
+  opacity: 0.5;
 }
