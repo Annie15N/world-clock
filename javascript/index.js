@@ -13,6 +13,20 @@ function updateTime() {
     );
   }
 
+  let madridElement = document.querySelector("#madrid");
+  if (madridElement) {
+    let madridDateElement = madridElement.querySelector(".date");
+
+    let madridTimeElement = madridElement.querySelector(".time");
+
+    let madridTime = moment().tz("Europe/Madrid");
+
+    madridDateElement.innerHTML = madridTime.format("ddd D MMMM YYYY");
+    madridTimeElement.innerHTML = madridTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   let sydneyElement = document.querySelector("#sydney");
   if (sydneyElement) {
     let sydneyDateElement = sydneyElement.querySelector(".date");
@@ -52,7 +66,8 @@ function updateCity(event) {
                   "h:mm:ss [<small>]A[</small>]"
                 )}
                 </div>
-            </div>`;
+            </div>
+            <a href="/"> Homepage 🌍</a>`;
 }
 
 updateTime();
